@@ -30,17 +30,17 @@ function creatDelpop(){
  * emptyStyle(string),离开为空时的提示样式
  */
 function textInputFocus(inputElement,defText,defStyle,focusStyle,emptyStyle){
-	$(inputElement).val(defText).addClass(defStyle);
+	// $(inputElement).val(defText).addClass(defStyle);
 	$(inputElement).focus(function(){
 		if($(this).val() == defText){
 			$(this).val('');
 		};
-		$(this).addClass(focusStyle);
+		/*$(this).addClass(focusStyle);
 		if($(this).hasClass(defStyle)){
 			$(this).removeClass(defStyle);
 		}else if($(this).hasClass(emptyStyle)){
 			$(this).removeClass(emptyStyle);
-		};
+		};*/
 	});
 	$(inputElement).blur(function(){
 		if($(this).val() == '' || $(this).val() == defText){
@@ -134,7 +134,7 @@ function textInputFocus(inputElement,defText,defStyle,focusStyle,emptyStyle){
     function setCondition(obj,arr){
         obj.find('b').click(function(){
             obj.find('input').eq(0).val(arr[$(this).index()][0]);
-            obj.find('input').eq(1).val(arr[$(this).index()][1]);   
+            obj.find('input').eq(1).val(arr[$(this).index()][1]);
         })
     }
 

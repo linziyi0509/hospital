@@ -11,8 +11,8 @@ $(function(){
     var arrDate=[days(0),days(1),days(7),getCurrentWeek(),getCurrentMonth()];
 
     setCondition($('.yyTime'),arrDate);
-    textInputFocus($('.booking-top dl').eq(0).find('input'),'请输入姓名',null,null,null);
-    textInputFocus($('.booking-top dl').eq(1).find('input'),'请输入电话',null,null,null);
+    textInputFocus($('.booking-top dl').eq(0).find('input'),'',null,null,null);
+    textInputFocus($('.booking-top dl').eq(1).find('input'),'',null,null,null);
     $('#form1 ul input:not(:last)').click(function(){
         sPopup($(this).index('#form1 ul input'));
        

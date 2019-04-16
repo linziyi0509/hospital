@@ -2,8 +2,8 @@ $(function(){
     var arrDate=[days(0),days(1),days(7),getCurrentWeek(),getCurrentMonth()];
 
     setCondition($('.yyTime'),arrDate);
-    textInputFocus($('#form1 li').eq(0).find('input'),'请输入姓名',null,null,null);
-    textInputFocus($('#form1 li').eq(1).find('input'),'请输入电话',null,null,null);
+    textInputFocus($('#form1 li').eq(0).find('input'),'',null,null,null);
+    textInputFocus($('#form1 li').eq(1).find('input'),'',null,null,null);
 
     //日历插件
     laydate.render({
